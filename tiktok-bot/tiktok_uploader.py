@@ -17,7 +17,7 @@ def get_access_token(code: str) -> dict:
         "client_secret": TIKTOK_CLIENT_SECRET,
         "code": code,
         "grant_type": "authorization_code",
-        "redirect_uri": "https://localhost",  # must match your TikTok app config
+        "redirect_uri": "https://rod07xyz-cell.github.io/Aether/callback",  # must match your TikTok app config
     }
     r = requests.post(AUTH_URL, data=data)
     r.raise_for_status()
