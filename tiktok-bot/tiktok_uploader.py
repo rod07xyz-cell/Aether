@@ -44,6 +44,7 @@ def upload_video(video_path: str, caption: str = "") -> bool:
             "disable_comment": False,
             "disable_stitch": False,
         },
+        "post_mode": "MEDIA_UPLOAD",
         "source_info": {
             "source": "FILE_UPLOAD",
             "video_size": file_size,
