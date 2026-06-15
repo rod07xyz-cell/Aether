@@ -39,7 +39,7 @@ def upload_video(video_path: str, caption: str = "") -> bool:
     payload = {
         "post_info": {
             "title": caption or "Check this out! #viral #fyp",
-            "privacy_level": "PUBLIC_TO_EVERYONE",
+            "privacy_level": "SELF_ONLY",
             "disable_duet": False,
             "disable_comment": False,
             "disable_stitch": False,
